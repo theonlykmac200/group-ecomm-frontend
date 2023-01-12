@@ -1,7 +1,15 @@
 import "./Nav.css";
+import { Link } from "react-router-dom";
 
 const Nav = () => {
-  return <div>Nav</div>;
+  return (
+    <nav>
+      <div className="nav__links">
+        <Link to="/">AMAZON</Link>
+        <Link to="/cart">Cart</Link>
+      </div>
+    </nav>
+  );
 };
 
 export default Nav;
