@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "amazon-ember";
+  src: url(fonts/Ember/AmazonEmber_Rg.ttf);
+}
+
 *,
 *::before,
 *::after {
@@ -25,5 +30,5 @@ video {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "amazon-ember", sans-serif;
 }
