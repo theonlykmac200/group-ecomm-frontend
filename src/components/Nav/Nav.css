@@ -1,0 +1,9 @@
+nav {
+  margin: 1rem;
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+}
+.nav__links {
+  display: inline-block;
+}
