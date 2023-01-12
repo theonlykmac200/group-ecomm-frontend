@@ -1,0 +1,23 @@
+.nav {
+  padding: 1rem 1rem 0.5rem 1rem;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+
+  &__links {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__cart {
+    display: flex;
+    align-items: center;
+    &-icon {
+      color: black;
+    }
+  }
+}
+.fa-solid {
+  color: black;
+}
+img {
+  width: 5rem;
+}
