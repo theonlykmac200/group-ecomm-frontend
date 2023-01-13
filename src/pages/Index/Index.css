@@ -1,0 +1,27 @@
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 10rem);
+  row-gap: 2rem;
+  column-gap: 4rem;
+  width: 40rem;
+  margin: 2rem auto;
+}
+
+.product {
+  min-width: 13rem;
+  border: 1px solid rgba(0, 0, 0, 0.247);
+  padding: 1rem;
+}
+
+button {
+  background-color: orange;
+  border: none;
+  color: black;
+  padding: 5px 15px;
+  margin-top: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+button:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "amazon-ember-bold";
+  src: url(../../fonts/Ember/AmazonEmber_Bd.ttf);
+}
+.product_name {
+  font-size: 1.1rem;
+}
+.product_price {
+  font-family: "amazon-ember-bold", sans-serif;
+}
+.product_desc {
+  font-size: 14px;
+}
