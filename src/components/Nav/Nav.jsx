@@ -10,8 +10,9 @@ const Nav = () => {
           <img src="https://i.imgur.com/DVEoHAP.png" alt="amazon logo" />
         </Link>
 
-        <input className="search_bar"
-            type="text" />
+        <div className="search">
+        <input className="searchInput" type="text" />
+      </div>
             
         <div className="nav__cart">
           <Link className="nav__cart-icon" to="/cart">
