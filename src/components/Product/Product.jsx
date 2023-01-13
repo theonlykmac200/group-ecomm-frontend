@@ -2,19 +2,18 @@ import React from "react";
 import "./Product.css";
 import { Link } from "react-router-dom";
 
-function Product({ name, description, price, quantity }) {
+function Product({ name, description, price, quantity, id }) {
   return (
-    <Link to={`/product/:id`} >
     <div className="product">
-      <p className="product_name">{name}</p>
-      <p className="product_price">{price}</p>
-      <p className="product_desc">{description}</p>
-      <p className="product_quant">{quantity}</p>
+      <Link to={`/product/${id}`}>
+        <p className="product_name">{name}</p>
+        <p className="product_price">{price}</p>
+        <p className="product_desc">{description}</p>
+        <p className="product_quant">{quantity}</p>
+      </Link>
       <button>Add to cart</button>
     </div>
-    </Link>
   );
 }
 
 export default Product;
-

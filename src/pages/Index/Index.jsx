@@ -1,68 +1,31 @@
 import Product from "../../components/Product/Product";
 import "./Index.css";
 
+const Index = ({ products }) => {
+  function loaded() {
+    return products.map((product) => {
+      console.log(product._id);
+      return (
+        <Product
+          className="product"
+          name={product.Title}
+          description={product.desc}
+          price={product.Price}
+          img={product.img}
+          id={product._id}
+        />
+      );
+    });
+  }
 
-const Index = () => {
+  function loading() {
+    return <h1 className="loading">Loading...</h1>;
+  }
+
   return (
-    <div>
-      <h1></h1>
-      <div className="products">
-        <Product
-          className="product"
-          name="Bose QuietComfort® 45 Headphones"
-          description="Noise cancelling, wireless, bluetooth headphones."
-          price="$239.99"
-        />
-        <Product
-          className="product"
-          name="Bose QuietComfort® 45 Headphones"
-          description="Noise cancelling, wireless, bluetooth headphones."
-          price="$239.99"
-        />
-        <Product
-          className="product"
-          name="Bose QuietComfort® 45 Headphones"
-          description="Noise cancelling, wireless, bluetooth headphones."
-          price="$239.99"
-        />
-        <Product
-          className="product"
-          name="Bose QuietComfort® 45 Headphones"
-          description="Noise cancelling, wireless, bluetooth headphones."
-          price="$239.99"
-        />
-        <Product
-          className="product"
-          name="Bose QuietComfort® 45 Headphones"
-          description="Noise cancelling, wireless, bluetooth headphones."
-          price="$239.99"
-        />
-        <Product
-          className="product"
-          name="Bose QuietComfort® 45 Headphones"
-          description="Noise cancelling, wireless, bluetooth headphones."
-          price="$239.99"
-        />
-        <Product
-          className="product"
-          name="Bose QuietComfort® 45 Headphones"
-          description="Noise cancelling, wireless, bluetooth headphones."
-          price="$239.99"
-        />
-        <Product
-          className="product"
-          name="Bose QuietComfort® 45 Headphones"
-          description="Noise cancelling, wireless, bluetooth headphones."
-          price="$239.99"
-        />
-        <Product
-          className="product"
-          name="Bose QuietComfort® 45 Headphones"
-          description="Noise cancelling, wireless, bluetooth headphones."
-          price="$239.99"
-        />
-      </div>
-    </div>
+    <>
+      <div className="products">{products ? loaded() : loading()}</div>
+    </>
   );
 };
 
