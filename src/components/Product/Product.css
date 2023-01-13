@@ -5,9 +5,23 @@
 .product_name {
   font-size: 1.1rem;
 }
+.product_name:hover {
+  text-decoration: underline;
+  color: #c25e4d;
+}
+
 .product_price {
   font-family: "amazon-ember-bold", sans-serif;
+  color: #c25e4d;
 }
 .product_desc {
   font-size: 14px;
+}
+img {
+  width: rem;
+  margin: 1rem 0 1rem 0;
+}
+.link {
+  text-decoration: none;
+  color: #529ba8;
 }

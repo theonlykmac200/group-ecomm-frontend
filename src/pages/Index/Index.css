@@ -1,16 +1,19 @@
 .products {
   display: grid;
-  grid-template-columns: repeat(3, 10rem);
-  row-gap: 2rem;
-  column-gap: 4rem;
-  width: 40rem;
+  grid-template-columns: repeat(3, 15rem);
+  gap: 1rem;
   margin: 2rem auto;
+  width: 45rem;
 }
 
 .product {
-  min-width: 13rem;
+  width: 15rem;
   border: 1px solid rgba(0, 0, 0, 0.247);
   padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
 }
 
 button {
