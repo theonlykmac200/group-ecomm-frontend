@@ -1,9 +1,12 @@
 import "./Show.css";
+import Product from "../../components/Product/Product";
 
-const Show = () => {
-  return <div>Show</div>;
+function Show () {
+  return (
+    <div className="show">Show page
+    </div>
+  )
 };
 
 export default Show;
 
-//testing 
