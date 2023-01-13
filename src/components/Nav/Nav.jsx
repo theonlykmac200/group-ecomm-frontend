@@ -9,10 +9,15 @@ const Nav = () => {
         <Link className="nav__logo" to="/">
           <img src="https://i.imgur.com/DVEoHAP.png" alt="amazon logo" />
         </Link>
+
+        <input className="search_bar"
+            type="text" />
+            
         <div className="nav__cart">
           <Link className="nav__cart-icon" to="/cart">
-
           </Link>
+
+        
           <div className="nav__cart-count">0</div>
         </div>
       </div>
