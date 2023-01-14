@@ -27,14 +27,22 @@ aside {
 .cart__item-title {
   margin: 0 0 0 2rem;
 }
+.cart__item-qty {
+  position: absolute;
+  left: 8rem;
+  bottom: 0rem;
+}
+.cart__item-qty select {
+  margin-left: 2px;
+}
 .delete {
   color: rgb(57, 140, 168);
   background-color: white;
   padding: none;
   margin: none;
   position: absolute;
-  left: 7rem;
-  bottom: 0;
+  left: 13rem;
+  bottom: -0.4rem;
 }
 .delete:hover {
   text-decoration: underline;
