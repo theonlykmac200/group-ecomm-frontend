@@ -1,11 +1,12 @@
 .nav {
-  padding: 0.5rem 1rem 0.5rem 1rem;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
   &__links {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #131921;
+    
   }
   &__cart {
     border: 1px solid rgba(0, 0, 0, 0.162);
@@ -14,7 +15,7 @@
     display: flex;
     align-items: center;
     &-icon {
-      color: black;
+      color: rgb(246, 241, 241);
     }
   }
 }

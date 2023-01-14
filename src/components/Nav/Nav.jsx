@@ -6,7 +6,7 @@ const Nav = () => {
     <nav className="nav">
       <div className="nav__links">
         <Link className="nav__logo" to="/">
-          <img src="https://i.imgur.com/DVEoHAP.png" alt="amazon logo" />
+          <img src="https://pngimg.com/uploads/amazon/amazon_PNG11.png" alt="amazon logo" />
         </Link>
         <div className="search">
           <input className="searchInput" type="text" />

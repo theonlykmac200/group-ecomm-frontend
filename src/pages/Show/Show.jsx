@@ -11,10 +11,9 @@ function Show ({products}) {
   return (
     <div className="show">
       <h1>{product.Title}</h1>
-      <h1>{product.desc}</h1>
-      <h1>{product.Price}</h1>
+      <p>{product.desc}</p>
+      <p>{product.Price}</p>
       <img src={product.img} alt={product.Title} />
-      <h1>{product._id}</h1>
     </div>
   )
 };

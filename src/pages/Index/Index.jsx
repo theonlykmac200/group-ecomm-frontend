@@ -5,14 +5,16 @@ const Index = ({ products }) => {
     return products.map((product) => {
       console.log(product._id);
       return (
-        <Product
-          className="product"
-          name={product.Title}
-          description={product.desc}
-          price={product.Price}
-          img={product.img}
-          id={product._id}
-        />
+
+            <Product
+              className="product"
+              name={product.Title}
+              description={product.desc}
+              price={product.Price}
+              img={product.img}
+              id={product._id}
+            />
+      
       );
     });
   }
@@ -25,4 +27,5 @@ const Index = ({ products }) => {
     </>
   );
 };
+
 export default Index;
