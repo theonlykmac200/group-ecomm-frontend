@@ -1,6 +1,5 @@
 import Product from "../../components/Product/Product";
 import "./Index.css";
-
 const Index = ({ products }) => {
   function loaded() {
     return products.map((product) => {
@@ -17,16 +16,13 @@ const Index = ({ products }) => {
       );
     });
   }
-
   function loading() {
     return <h1 className="loading">Loading...</h1>;
   }
-
   return (
     <>
       <div className="products">{products ? loaded() : loading()}</div>
     </>
   );
 };
-
 export default Index;

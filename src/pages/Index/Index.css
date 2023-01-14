@@ -29,3 +29,7 @@ button {
 button:hover {
   cursor: pointer;
 }
+.home_image{
+  width: auto;
+}
+

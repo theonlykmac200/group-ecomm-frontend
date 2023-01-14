@@ -4,7 +4,9 @@ import Index from "../../pages/Index/Index";
 import Show from "../../pages/Show/Show";
 import Cart from "../../pages/Cart/Cart";
 
+
 const Main = () => {
+
   const [products, setProducts] = useState(null);
 
   const URL = "https://group-3proj.herokuapp.com/product";
