@@ -1,7 +1,7 @@
 import "./Show.css";
 import { useNavigate, useParams } from "react-router";
 
-function Show ({products}) {
+function Show({ products }) {
 
   const { id } = useParams();
   const product = products.find((product) => product._id === id);
@@ -9,12 +9,17 @@ function Show ({products}) {
 
 
   return (
-    <div className="show">
-      <h1>{product.Title}</h1>
-      <p>{product.desc}</p>
-      <p>{product.Price}</p>
-      <img src={product.img} alt={product.Title} />
+    <div className="box-one">
+      <div className="content">
+        <img className="product-img" src={product.img} alt={product.Title} />
+
+        <p className="product-title">{product.Title}</p>
+        <p className="product-price">${product.Price}</p>
+      </div>
     </div>
+
+  
+
   )
 };
 

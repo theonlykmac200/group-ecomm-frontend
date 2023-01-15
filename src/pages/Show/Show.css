@@ -1,3 +1,18 @@
-.show{
-   background-color: red;
+.box-one {
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.236);
+    height: 700px;
+    width: 50%;
+    margin: 2rem auto;
+
+}
+
+.product-title {
+    color: rgb(15, 9, 9);
+    margin: 0;
+}
+
+.product-img {
+    width: 300px;
+    height: 230px;
 }

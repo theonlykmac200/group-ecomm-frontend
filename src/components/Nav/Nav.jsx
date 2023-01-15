@@ -1,7 +1,7 @@
 import "./Nav.scss";
 import { Link } from "react-router-dom";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
-import PageviewIcon from '@mui/icons-material/Pageview';
+import SearchIcon from '@mui/icons-material/Search';
 const Nav = () => {
   return (
     <nav className="nav">
@@ -12,7 +12,7 @@ const Nav = () => {
 
         <div className="search">
           <input className="searchInput" type="text" />
-          <PageviewIcon className="searchicon" />
+          <SearchIcon className="searchicon" />
         </div>
 
         <div className="nav__option">
