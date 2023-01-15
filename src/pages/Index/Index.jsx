@@ -5,7 +5,7 @@ const Index = ({ products }) => {
     return products.map((product) => {
       console.log(product._id);
       return (
-
+        
             <Product
               className="product"
               name={product.Title}
@@ -24,6 +24,7 @@ const Index = ({ products }) => {
   return (
     <>
       <div className="products">{products ? loaded() : loading()}</div>
+
     </>
   );
 };
