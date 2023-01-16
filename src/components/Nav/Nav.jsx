@@ -4,7 +4,7 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import SearchIcon from "@mui/icons-material/Search";
 import { useState } from "react";
 
-const Nav = () => {
+const Nav = ({ products }) => {
   const [value, setValue] = useState("");
 
   const onChange = (e) => {
@@ -12,7 +12,7 @@ const Nav = () => {
   };
 
   const onSearch = (searchTerm) => {
-    // our api to fetch the search result
+    setValue(searchTerm);
     console.log("search", searchTerm);
   };
 
@@ -34,8 +34,30 @@ const Nav = () => {
             onChange={onChange}
           />
           <SearchIcon onClick={() => onSearch(value)} className="searchicon" />
+          <div className="dropdown">
+            {products
+              .filter((item) => {
+                const searchTerm = value.toLowerCase();
+                const fullName = item.Title.toLowerCase();
+
+                return (
+                  searchTerm &&
+                  fullName.startsWith(searchTerm) &&
+                  fullName !== searchTerm
+                );
+              })
+              .map((item) => (
+                <div
+                  onClick={() => onSearch(item.Title)}
+                  className="dropdown-row"
+                  key={item._id}
+                >
+                  <SearchIcon id="icon-search" />
+                  {item.Title.slice(0, 60) + "..."}
+                </div>
+              ))}
+          </div>
         </div>
-        <div className="dropdown"></div>
 
         <div className="nav__option">
           <span className="nav__One">Hello, sign in</span>

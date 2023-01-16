@@ -6,7 +6,7 @@ import Home from "./components/Home/Home";
 import { useState, useEffect } from "react";
 
 function App() {
-  const [products, setProducts] = useState(null);
+  const [products, setProducts] = useState([]);
 
   const URL = "https://group-3proj.herokuapp.com/product";
 
