@@ -9,18 +9,26 @@ function Show({ products }) {
 
 
   return (
-    <div className="box-one">
-      <div className="content">
-        <img className="product-img" src={product.img} alt={product.Title} />
+    <div className="container">
+      <div className="left">
+      <img className="product-img" src={product.img} alt={product.Title} />
+        </div>
 
-        <p className="product-title">{product.Title}</p>
-        <p className="product-price">${product.Price}</p>
+      <div className="center">
+      <p className="product-title">{product.Title}</p>
+      </div>
+
+      <div className="right">
+      <h1>testing</h1>
+        <p>${product.Price}</p>
+        <button>Add to cart</button>
       </div>
     </div>
 
-  
+
 
   )
 };
+
 
 export default Show;
