@@ -4,22 +4,20 @@ import Index from "../../pages/Index/Index";
 import Show from "../../pages/Show/Show";
 import Cart from "../../pages/Cart/Cart";
 
+const Main = ({ products }) => {
+  // const [products, setProducts] = useState(null);
 
-const Main = () => {
+  // const URL = "https://group-3proj.herokuapp.com/product";
 
-  const [products, setProducts] = useState(null);
+  // const getProducts = async () => {
+  //   const res = await fetch(URL);
+  //   const data = await res.json();
+  //   setProducts(data);
+  // };
 
-  const URL = "https://group-3proj.herokuapp.com/product";
-
-  const getProducts = async () => {
-    const res = await fetch(URL);
-    const data = await res.json();
-    setProducts(data);
-  };
-
-  useEffect(() => {
-    getProducts();
-  }, []);
+  // useEffect(() => {
+  //   getProducts();
+  // }, []);
 
   return (
     <main>
