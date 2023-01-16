@@ -1,18 +1,16 @@
 .box-one {
-    background-color: white;
-    border: 1px solid rgba(0, 0, 0, 0.236);
-    height: 700px;
-    width: 50%;
-    margin: 2rem auto;
-
+    margin: 20px 20px 0 0;  
+    border: 1px solid #333;
+    overflow: auto;
+    z-index: 1;
 }
 
-.product-title {
+.product-title, .product-price {
     color: rgb(15, 9, 9);
-    margin: 0;
+    text-align: right;
 }
 
 .product-img {
-    width: 300px;
-    height: 230px;
+    float: left;
+    display: block;
 }

@@ -2,6 +2,10 @@
   font-family: "amazon-ember-bold";
   src: url(../../fonts/Ember/AmazonEmber_Bd.ttf);
 }
+.product {
+  z-index: 1; 
+  background-color: white;
+}
 .product_name {
   font-size: 1.1rem;
 }
