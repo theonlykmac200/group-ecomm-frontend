@@ -1,5 +1,4 @@
 import "./Cart.css";
-import Subtotal from "../../components/Subtotal/Subtotal";
 
 const Cart = () => {
   return (
