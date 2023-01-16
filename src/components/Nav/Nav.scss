@@ -16,9 +16,13 @@
     padding: 2px 6px 2px 6px;
     display: flex;
     align-items: center;
+    &-count {
+      color: white;
+      margin-right: 2rem;
+    }
     &-icon {
       color: rgb(254, 254, 254);
-      margin-right: 20px;
+      margin-right: 5px;
     }
   }
 }
