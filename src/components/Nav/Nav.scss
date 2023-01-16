@@ -70,6 +70,11 @@ img {
 }
 .dropdown-row {
   padding: 0.4rem;
+  height: 1.7rem;
+  overflow: hidden;
+}
+.dropdown-row:hover {
+  cursor: pointer;
 }
 #icon-search {
   height: 15px;

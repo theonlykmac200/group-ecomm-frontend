@@ -53,7 +53,7 @@ const Nav = ({ products }) => {
                   key={item._id}
                 >
                   <SearchIcon id="icon-search" />
-                  {item.Title.slice(0, 60) + "..."}
+                  {item.Title}
                 </div>
               ))}
           </div>
