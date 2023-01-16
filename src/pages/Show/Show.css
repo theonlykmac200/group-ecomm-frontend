@@ -1,78 +1,10 @@
-/* .box-one {
-    /* margin: 20px 20px 0 0;  
-    border: 1px solid #333;
-    overflow: auto;
-    z-index: 1;
-    padding: 5rem; */
-/* display: flex;
-    justify-content: space-between;
-    width: 75%;
-    margin: auto;
-    gap: 1rem;
-    border: 1px solid #333;
-}
-
-.product-title, .product-price {
-    color: rgb(15, 9, 9);
-    text-align: right;
-}
-
-.product-img {
-    
-    display: block;
-    width: 300px;
-} */
-/* 
-.product {
-    display: flex;
-    width: 95%; 
-    margin: auto;
-    gap: 1rem; 
-    background-color: white;
-}
-
-.product_container {
-    border: 1px solid rgba(0, 0, 0, 0.236);
-    padding: 1rem;
-    width: 70%;
-    margin: 2rem auto;
-    z-index: 1;
-    background-color: white;
-}
-
-.product__title {
-    font-size: 2rem;
-}
-
-.product__item {
-    margin: 1rem 0 0 0;
-    display: grid;
-    grid-template-columns: 6rem 5fr 1fr;
-    align-items: start;
-    position: relative;
-}
-
-.product_qty {
-    position: absolute;
-    left: 8rem;
-    bottom: 0rem;
-}
-.subtotal {
-    z-index: 1;
-    border: 1px solid rgba(0, 0, 0, 0.198);
-    padding: 1rem;
-    background-color: rgb(255, 255, 255);
-    margin: 2rem auto;
-    width: 10%;
-    height: 7rem;
-}  */
-/* .products {
-    width: 100%;
-} */
-
-* {
+/* * {
     box-sizing: border-box;
     z-index: 1;
+} */
+.container {
+    z-index: 1;
+    background-color: white;
 }
 .h1 {
     text-align: center;

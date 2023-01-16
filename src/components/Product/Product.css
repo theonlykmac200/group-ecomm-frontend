@@ -29,3 +29,8 @@ img {
   text-decoration: none;
   color: #529ba8;
 }
+.rating {
+  width: 20px;
+  color: orange;
+  display: inline;
+}
