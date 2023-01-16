@@ -79,8 +79,10 @@ const Cart = () => {
           <p>$29.99</p>
         </div>
       </div>
-      <aside>
-        <Subtotal />
+      <aside className="subtotal">
+        <h1>Subtotal (3 items)</h1>
+        <p>$89.97</p>
+        <button>Checkout</button>
       </aside>
     </div>
   );
