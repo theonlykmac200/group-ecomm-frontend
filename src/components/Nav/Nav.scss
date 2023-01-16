@@ -33,6 +33,7 @@ img {
   display: flex;
   align-items: center;
   border-radius: 24px;
+  position: relative;
 }
 .searchInput {
   height: 16px;
@@ -42,6 +43,7 @@ img {
   background-color: rgb(250, 250, 246);
   border-radius: 5px 0 0 5px;
   border: none;
+  z-index: 3;
 }
 .searchicon {
   background-color: #febd69;
@@ -52,6 +54,21 @@ img {
 .searchicon:hover {
   cursor: pointer;
   background-color: #ffb553;
+}
+.dropdown {
+  position: absolute;
+  background-color: rgb(250, 250, 246);
+  z-index: 2;
+  top: 1.3rem;
+  left: 2rem;
+  width: 60%;
+  border-radius: 0 0 5px 5px;
+}
+.dropdown-row {
+  padding: 0.4rem;
+}
+#icon-search {
+  height: 15px;
 }
 
 .nav__One {
