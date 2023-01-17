@@ -16,27 +16,13 @@ const Nav = ({ products, setProducts, user, handleLogout }) => {
   };
 
   return !user ? (
-    <nav className="nav-auth">
-      <Link className="nav__logo" to="/">
-        <img
-          src="https://pngimg.com/uploads/amazon/amazon_PNG11.png"
-          alt="amazon logo"
-        />
-      </Link>
-      <div className="nav__auth-links">
-        <Link to="/signup">
-          <p className="nav__signup">Sign Up</p>
-        </Link>
-        <Link className="nav__login" to="/login">
-          <p>Log In</p>
-        </Link>
-      </div>
-    </nav>
+    <nav className="nav-auth"></nav>
   ) : (
     <nav className="nav">
       <div className="nav__links">
         <Link className="nav__logo" to="/">
           <img
+            className="nav-img"
             src="https://pngimg.com/uploads/amazon/amazon_PNG11.png"
             alt="amazon logo"
           />

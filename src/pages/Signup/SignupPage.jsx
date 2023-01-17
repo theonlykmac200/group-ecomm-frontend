@@ -52,44 +52,65 @@ function SignupPage(props) {
   }
 
   return (
-    <div className="auth-form">
-      <form onSubmit={handleSubmit}>
-        <legend>Sign Up</legend>
-        <input
-          type="text"
-          placeholder="Name"
-          value={formState.name}
-          name="name"
-          onChange={handleChange}
-        />
-        <input
-          type="email"
-          placeholder="Email"
-          value={formState.email}
-          name="email"
-          onChange={handleChange}
-        />
-        <input
-          type="password"
-          placeholder="Password"
-          value={formState.password}
-          name="password"
-          onChange={handleChange}
-        />
-        <input
-          type="password"
-          placeholder="Confirm Password"
-          value={formState.passwordConf}
-          name="passwordConf"
-          onChange={handleChange}
-        />
-        <div className="form-controls">
-          <button disabled={!validForm()}>Sign Up</button>
-          <Link to="/">Cancel</Link>
-        </div>
-      </form>
-      <p>{messageState.msg}</p>
-    </div>
+    <>
+      <img
+        className="auth-img"
+        src="https://i.imgur.com/5c0O9WH.png"
+        alt="amazon logo"
+      />
+      <div className="auth-form">
+        <form onSubmit={handleSubmit}>
+          <legend>Sign Up</legend>
+          <label for="name">Your name</label>
+          <br />
+          <input
+            type="text"
+            value={formState.name}
+            name="name"
+            onChange={handleChange}
+          />
+          <br />
+          <label for="email">Email</label>
+          <br />
+          <input
+            type="email"
+            value={formState.email}
+            name="email"
+            onChange={handleChange}
+          />
+          <br />
+          <label for="password">Password</label>
+          <br />
+          <input
+            type="password"
+            value={formState.password}
+            name="password"
+            onChange={handleChange}
+          />
+          <br />
+          <label for="passwordConf">Confirm Password</label>
+          <br />
+          <input
+            type="password"
+            value={formState.passwordConf}
+            name="passwordConf"
+            onChange={handleChange}
+          />
+          <div className="form-controls">
+            <button id="signup-btn" disabled={!validForm()}>
+              Sign Up
+            </button>
+          </div>
+        </form>
+        <p>{messageState.msg}</p>
+      </div>
+      <p className="login">
+        Already have an account?{" "}
+        <Link className="login-link" to="/login">
+          Sign in{" "}
+        </Link>
+      </p>
+    </>
   );
 }
 

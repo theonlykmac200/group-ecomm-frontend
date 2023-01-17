@@ -1,3 +1,31 @@
 .auth-form {
   margin-top: 15rem;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  width: 20rem;
+  padding: 2rem;
+  margin: 1rem auto 0.5rem auto;
+  border-radius: 4px;
+}
+.auth-img {
+  margin: auto;
+  margin-top: 1rem;
+  width: 7rem;
+}
+legend {
+  font-size: 1.8rem;
+}
+label {
+  font-size: 0.8rem;
+}
+.login {
+  text-align: center;
+  margin: auto;
+  text-decoration: none;
+}
+.login-link {
+  text-decoration: none;
+  color: #1866c0;
+}
+.login-link:hover {
+  text-decoration: underline;
 }
