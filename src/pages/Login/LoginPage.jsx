@@ -41,7 +41,7 @@ function LoginPage({ handleSignupAndLogin, updateMessage }) {
 
       <div className="auth-form">
         <form onSubmit={handleSubmit}>
-          <legend>Log In</legend>
+          <legend>Sign In</legend>
           <label for="email">Email</label>
           <br />
           <input
