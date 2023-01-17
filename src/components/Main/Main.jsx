@@ -26,12 +26,31 @@ const Main = (props) => {
   return (
     <main>
       <Routes>
-        <Route path="/" element={<Index products={props.products} />} />
+        <Route
+          path="/"
+          element={
+            <ProtectedRoute user={props.user}>
+              <Index products={props.products} />
+            </ProtectedRoute>
+          }
+        />
         <Route
           path="/product/:id"
-          element={<Show products={props.products} />}
+          element={
+            <ProtectedRoute user={props.user}>
+              <Show products={props.products} />
+            </ProtectedRoute>
+          }
         />
-        <Route path="/cart" element={<Cart />} />
+        <Route
+          path="/cart"
+          element={
+            <ProtectedRoute user={props.user}>
+              <Cart />
+            </ProtectedRoute>
+          }
+        />
+
         <Route path="/signup" element={<SignupPage {...props} />} />
         <Route path="/login" element={<LoginPage {...props} />} />
       </Routes>
