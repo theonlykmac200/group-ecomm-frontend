@@ -26,6 +26,13 @@
   height: 9rem;
   margin: 1rem 0 1rem 0;
 }
+@media screen and (max-width: 1119px) {
+  .product_img {
+    width: 5rem;
+    height: 5rem;
+  }
+}
+
 .link {
   text-decoration: none;
   color: #529ba8;
