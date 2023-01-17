@@ -3,7 +3,7 @@
   src: url(../../fonts/Ember/AmazonEmber_Bd.ttf);
 }
 .product {
-  z-index: 1; 
+  z-index: 1;
   background-color: white;
 }
 .product_name {
@@ -21,8 +21,9 @@
 .product_desc {
   font-size: 14px;
 }
-img {
-  width: rem;
+.product_img {
+  width: 9rem;
+  height: 9rem;
   margin: 1rem 0 1rem 0;
 }
 .link {

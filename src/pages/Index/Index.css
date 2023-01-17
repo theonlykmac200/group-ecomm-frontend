@@ -1,25 +1,24 @@
 .products {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-wrap: wrap;
   gap: 1rem;
-  /* width: 65%; */
-  /* margin: 2rem auto; */
+  margin: auto;
   padding: 4rem;
   background-color: rgb(176, 206, 221);
-  mask-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  /* mask-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); */
 }
 
 .product {
-  min-width: 13rem;
+  width: 20rem;
+  height: 23rem;
   padding: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: start;
 }
-
-
-
 
 button {
   background-color: #fea52c;
