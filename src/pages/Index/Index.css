@@ -20,6 +20,13 @@
   align-items: start;
 }
 
+@media screen and (max-width: 1119px) {
+  .product {
+    width: 16rem;
+    height: 20rem;
+  }
+}
+
 button {
   background-color: #fea52c;
   border: none;
