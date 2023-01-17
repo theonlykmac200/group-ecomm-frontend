@@ -64,7 +64,7 @@ const Nav = ({ products, setProducts, user, handleLogout }) => {
         <div className="nav__option">
           <span className="nav__One">Hello, {user.email}</span>
           <Link to="" onClick={handleLogout}>
-            <p className="nav__logout">Log Out</p>
+            <p className="nav__logout">Sign Out</p>
           </Link>
         </div>
 
