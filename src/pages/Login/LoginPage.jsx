@@ -62,7 +62,7 @@ function LoginPage({ handleSignupAndLogin, updateMessage }) {
             onChange={handleChange}
           />
           <div className="form-controls">
-            <button>Log In</button>
+            <button>Sign In</button>
           </div>
         </form>
       </div>
