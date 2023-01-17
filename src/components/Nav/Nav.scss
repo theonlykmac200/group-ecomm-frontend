@@ -29,8 +29,9 @@
 .fa-solid {
   color: black;
 }
-img {
+.nav-img {
   width: 5rem;
+  padding: 0.5rem 0 0 0.5rem;
 }
 .search {
   flex: 1;
@@ -103,7 +104,6 @@ img {
 }
 .nav__signup {
   z-index: 2;
-  color: white;
   text-decoration: none;
   &:hover {
     text-decoration: underline;
@@ -111,7 +111,6 @@ img {
 }
 .nav__login {
   z-index: 3;
-  color: white;
   text-decoration: none;
   &:hover {
     text-decoration: underline;

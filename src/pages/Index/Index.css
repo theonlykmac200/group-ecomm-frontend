@@ -22,7 +22,7 @@
 
 
 button {
-  background-color: orange;
+  background-color: #fea52c;
   border: none;
   color: black;
   padding: 5px 15px;
@@ -32,6 +32,5 @@ button {
 }
 button:hover {
   cursor: pointer;
+  background-color: #f29f29;
 }
-
-
