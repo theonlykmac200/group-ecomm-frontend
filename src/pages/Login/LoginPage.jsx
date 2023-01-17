@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { login } from "../../services/signupService";
 
-function LoginPage({ handleSignupAndLogin, updateMessage }) {
+function LoginPage({ handleSignupAndLogIn, updateMessage }) {
   const [formState, setFormState] = useState({
     email: "",
     password: "",
@@ -23,9 +23,10 @@ function LoginPage({ handleSignupAndLogin, updateMessage }) {
     e.preventDefault();
     try {
       await login(formState);
-      handleSignupAndLogin();
+      handleSignupAndLogIn();
       navigate("/", { replace: true });
     } catch (err) {
+      console.log(err);
       // Use something other than an alert in production code
       alert("Invalid Credentials!");
     }
