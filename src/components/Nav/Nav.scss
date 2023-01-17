@@ -95,3 +95,31 @@ img {
   margin-right: 10px;
   color: white;
 }
+.nav-auth {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #131921;
+}
+.nav__signup {
+  z-index: 2;
+  color: white;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.nav__login {
+  z-index: 3;
+  color: white;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.nav__logout {
+  color: white;
+  &:hover {
+    text-decoration: underline;
+  }
+}

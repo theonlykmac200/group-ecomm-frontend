@@ -4,7 +4,7 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import SearchIcon from "@mui/icons-material/Search";
 import { useState } from "react";
 
-const Nav = ({ products }) => {
+const Nav = ({ products, setProducts, user, handleLogout }) => {
   const [value, setValue] = useState("");
 
   const onChange = (e) => {
@@ -13,10 +13,26 @@ const Nav = ({ products }) => {
 
   const onSearch = (searchTerm) => {
     setValue(searchTerm);
-    console.log("search", searchTerm);
   };
 
-  return (
+  return !user ? (
+    <nav className="nav-auth">
+      <Link className="nav__logo" to="/">
+        <img
+          src="https://pngimg.com/uploads/amazon/amazon_PNG11.png"
+          alt="amazon logo"
+        />
+      </Link>
+      <div className="nav__auth-links">
+        <Link to="/signup">
+          <p className="nav__signup">Sign Up</p>
+        </Link>
+        <Link className="nav__login" to="/login">
+          <p>Log In</p>
+        </Link>
+      </div>
+    </nav>
+  ) : (
     <nav className="nav">
       <div className="nav__links">
         <Link className="nav__logo" to="/">
@@ -60,8 +76,10 @@ const Nav = ({ products }) => {
         </div>
 
         <div className="nav__option">
-          <span className="nav__One">Hello, sign in</span>
-          <span className="nav__Two">Your Account</span>
+          <span className="nav__One">Hello, {user.email}</span>
+          <Link to="" onClick={handleLogout}>
+            <p className="nav__logout">Log Out</p>
+          </Link>
         </div>
 
         <div className="nav__option">
