@@ -22,10 +22,12 @@ const Main = ({ products }) => {
   return (
     <main>
       <Routes>
-        <Route path="/" element={<Index products={products} />} />
+        <Route path="/" 
+        element={<Index products={products} /> }  />
         <Route path="/product/:id" element={<Show products={products} />} />
         <Route path="/cart" element={<Cart />} />
       </Routes>
+
     </main>
   );
 };
