@@ -44,7 +44,7 @@ function App(props) {
         products={products}
         setProducts={setProducts}
       />
-      <Home />
+      {/* <Home /> */}
       <Main
         user={userState.user}
         handleSignupAndLogIn={handleSignupAndLogIn}
