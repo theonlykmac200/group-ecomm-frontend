@@ -34,7 +34,7 @@
 .cart__item-qty select {
   margin-left: 2px;
 }
-.delete {
+#delete {
   color: rgb(57, 140, 168);
   background-color: white;
   padding: none;
@@ -43,7 +43,7 @@
   left: 13rem;
   bottom: -0.4rem;
 }
-.delete:hover {
+#delete:hover {
   text-decoration: underline;
 }
 .cart__item-img {

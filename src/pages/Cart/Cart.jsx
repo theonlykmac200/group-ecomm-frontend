@@ -26,7 +26,7 @@ const Cart = () => {
             </select>
           </p>
 
-          <button className="delete">Delete</button>
+          <button id="delete">Delete</button>
           <p>$29.99</p>
         </div>
         <div className="cart__item">
@@ -50,7 +50,7 @@ const Cart = () => {
             </select>
           </p>
 
-          <button className="delete">Delete</button>
+          <button id="delete">Delete</button>
           <p>$29.99</p>
         </div>
         <div className="cart__item">
@@ -74,7 +74,7 @@ const Cart = () => {
             </select>
           </p>
 
-          <button className="delete">Delete</button>
+          <button id="delete">Delete</button>
           <p>$29.99</p>
         </div>
       </div>
