@@ -42,5 +42,4 @@ const Index = ({ products }) => {
 };
 
 export default Index;
-// position absolute
-// div image 
+
