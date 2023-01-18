@@ -31,8 +31,10 @@ function Show({ products }) {
         </div>
 
         <div className="right">
-          <h1>Buy now</h1>
-          <button>Add to cart</button>
+          <div className="section">
+          <h1 className="buy-button">Buy now</h1>
+          <button className="add-cart">Add to cart</button>
+          </div>
         </div>
       </div>
     </div>

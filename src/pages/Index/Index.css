@@ -51,12 +51,10 @@ button:hover {
   mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 }
 .gradient {
-  
-  /* mask-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); */
   height: 500px;
   position: absolute;
   z-index: 0;
-}
+} 
 .image {
   width: 100%;
   z-index: -1;
