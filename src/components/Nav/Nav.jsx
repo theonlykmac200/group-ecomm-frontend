@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import SearchIcon from "@mui/icons-material/Search";
 import { useState } from "react";
+import MenuIcon from '@mui/icons-material/Menu';
 
 const Nav = ({ products, setProducts, user, handleLogout }) => {
   const [value, setValue] = useState("");
@@ -84,6 +85,22 @@ const Nav = ({ products, setProducts, user, handleLogout }) => {
           </Link>
 
           <div className="nav__cart-count">0</div>
+        </div>
+      </div>
+      <div className="second-nav">
+        <div className="all-text">
+          {/* <MenuIcon id="menu-icon"/> */}
+          <span>All</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <span>Customer Service</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <span>Best Sellers</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <span>Amazon Basics</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <span>Today's Deals</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <span>Prime</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <span>New Releases</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <span>Music</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <span>Books</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <span>Registry</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <span>Gift Cards</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         </div>
       </div>
     </nav>
