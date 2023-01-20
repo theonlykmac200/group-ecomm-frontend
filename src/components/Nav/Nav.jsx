@@ -4,6 +4,7 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import SearchIcon from "@mui/icons-material/Search";
 import { useState } from "react";
 import MenuIcon from '@mui/icons-material/Menu';
+import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 
 const Nav = ({ products, setProducts, user, handleLogout }) => {
   const [value, setValue] = useState("");
@@ -28,6 +29,12 @@ const Nav = ({ products, setProducts, user, handleLogout }) => {
             alt="amazon logo"
           />
         </Link>
+
+        <div className="nav__address">
+          <LocationOnOutlinedIcon id="location"/>
+          <span className="address-one">Hello</span>
+          <span className="address-two">Select your address</span>
+        </div>
 
         <div className="search">
           <input
@@ -89,18 +96,21 @@ const Nav = ({ products, setProducts, user, handleLogout }) => {
       </div>
       <div className="second-nav">
         <div className="all-text">
-          <MenuIcon id="menu-icon"/>
-          <span>All</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <span>Customer Service</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <span>Best Sellers</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <span>Amazon Basics</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <span>Today's Deals</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <span>Prime</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <span>New Releases</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <span>Music</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <span>Books</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <span>Registry</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <span>Gift Cards</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <MenuIcon className="menu-icon"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <span>All</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <span>Customer Service</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <span>Prime Video</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <span>Best Sellers</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <span>Amazon Basics</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <span>Today's Deals</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <span>Prime</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <span>New Releases</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <span>Amazon Home</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <span>Music</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <span>Books</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <span>Fashion</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <span>Registry</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <span>Gift Cards</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         </div>
       </div>
     </nav>
