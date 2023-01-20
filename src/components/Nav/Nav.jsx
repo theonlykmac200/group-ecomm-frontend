@@ -89,7 +89,7 @@ const Nav = ({ products, setProducts, user, handleLogout }) => {
       </div>
       <div className="second-nav">
         <div className="all-text">
-          {/* <MenuIcon id="menu-icon"/> */}
+          <MenuIcon id="menu-icon"/>
           <span>All</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <span>Customer Service</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <span>Best Sellers</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
