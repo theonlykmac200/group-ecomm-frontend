@@ -13,7 +13,9 @@ Include User Stories in at least one README
 
 
 ### Wireframes
-Low fidelity wireframes are fine.
+![Alt text](Screen%20Shot%202023-01-20%20at%2011.43.14%20AM.png)
+![Alt text](Screen%20Shot%202023-01-20%20at%2011.43.27%20AM.png)
+![Alt text](Screen%20Shot%202023-01-20%20at%2011.43.37%20AM.png)
 
 ### Screenshots
 After you have a fully styled project go back and add screen shots of some completed pages.
@@ -22,7 +24,9 @@ After you have a fully styled project go back and add screen shots of some compl
 A list of all technologies, libraries, APIs, etc. used in the project.
 
 ### Getting Started: 
-Links to the project's planning (Trello board) and the deployed app on Netlify.
+
+Trello board: https://trello.com/b/zosxpcUf/ecommerce-store
+Netlify: https://amazing-lily-47694b.netlify.app/
 
 ### Future Enhancements:
 Identify future features and enhancements planned for the project.
