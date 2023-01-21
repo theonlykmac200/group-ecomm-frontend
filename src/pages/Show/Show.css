@@ -3,90 +3,90 @@
     z-index: 1;
 } */
 
+body {
+  min-width: 1030px;
+}
+
 .allproducts {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    background-color: white;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: white;
 }
 
 .container {
-    width: 400%;
-    background-color: white;
+  width: 400%;
+  background-color: white;
 }
 
 .right {
-    float: left;
-    width: 20%;
-    height: 200px;
-    text-align: center;
-    border: 1px solid rgba(0, 0, 0, 0.236);
-    border-radius: 9px;
-    padding: 1rem;
-    margin: 7em auto;
+  float: left;
+  width: 20%;
+  height: 200px;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.236);
+  border-radius: 9px;
+  padding: 1rem;
+  margin: 7em auto;
 }
 
 .add-cart {
-    border: none;
-    color: black;
-    padding: 5px 15px;
-    margin-top: 10px;
-    border-radius: 5px;
-    font-size: 14px;
-    background-color: rgb(254, 189, 105);
-     
+  border: none;
+  color: black;
+  padding: 5px 15px;
+  margin-top: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: rgb(254, 189, 105);
 }
 
 .free-returns {
-    color: #007185;
-    font-size: 14px;
-    margin: 10px;
+  color: #007185;
+  font-size: 14px;
+  margin: 10px;
 }
 
 .order-soon {
-    color: red;
-    margin: 10px;
+  color: red;
+  margin: 10px;
 }
 
 .free-delivery {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 .center {
-    float: left;
-    width: 35%;
-    height: 500px;
-    text-align: center;
-    padding-top: 60px;
-    margin: 50px;
+  float: left;
+  width: 35%;
+  height: 500px;
+  text-align: center;
+  padding-top: 60px;
+  margin: 50px;
 }
 .product-title {
-    color: rgb(4, 2, 2);
-    font-size: 20px;
-    font-weight: 100;
+  color: rgb(4, 2, 2);
+  font-size: 20px;
+  font-weight: 100;
 }
-
 
 .left {
-    float: left;
-    width: 35%;
-    padding: 10px;
-    height: 500px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
+  float: left;
+  width: 35%;
+  padding: 10px;
+  height: 500px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
 }
-.product-img{
-    height: 300px;
-    width: 300px;
-    margin-top: 100px;
-}
-
-.product-price{
-    line-height: 80px;
-}
-.product-desc{
-    line-height: 25px;
+.product-img {
+  height: 300px;
+  width: 300px;
+  margin-top: 100px;
 }
 
-
+.product-price {
+  line-height: 80px;
+}
+.product-desc {
+  line-height: 25px;
+}
