@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import SearchIcon from "@mui/icons-material/Search";
 import { useState } from "react";
-import MenuIcon from '@mui/icons-material/Menu';
-import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
+import MenuIcon from "@mui/icons-material/Menu";
+import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 
 const Nav = ({ products, setProducts, user, handleLogout }) => {
   const [value, setValue] = useState("");
@@ -31,8 +31,10 @@ const Nav = ({ products, setProducts, user, handleLogout }) => {
         </Link>
 
         <div className="nav__address">
-          <LocationOnOutlinedIcon id="location"/>
-          <span className="address-one">Hello</span>
+          <div className="nav_address-icon">
+            <LocationOnOutlinedIcon id="location" />
+            <span className="address-one">Hello</span>
+          </div>
           <span className="address-two">Select your address</span>
         </div>
 
@@ -96,7 +98,8 @@ const Nav = ({ products, setProducts, user, handleLogout }) => {
       </div>
       <div className="second-nav">
         <div className="all-text">
-          <MenuIcon className="menu-icon"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <MenuIcon className="menu-icon" />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <span>All</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <span>Customer Service</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <span>Prime Video</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

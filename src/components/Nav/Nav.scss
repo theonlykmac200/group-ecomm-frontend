@@ -181,12 +181,20 @@
   }
 }
 .nav__address {
+  margin-left: 10px;
   display: flex;
-  flex-direction: column;
+  align-items: center;
   color: white;
+
   &:hover {
     cursor: pointer;
   }
+}
+.nav_address-icon {
+  margin-right: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .address-one {
   font-size: 12px;
@@ -196,6 +204,6 @@
   font-size: 15px;
   font-weight: 810;
 }
-.location {
-  float: left;
+#location {
+  width: 20px;
 }
