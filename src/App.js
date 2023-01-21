@@ -35,9 +35,16 @@ function App(props) {
     getProducts();
   }, []);
 
+  function handleSearch(input) {
+    input === ""
+      ? getProducts()
+      : setProducts(products.filter((p) => p.Title === input));
+  }
+
   return (
     <div className="App">
       <Nav
+        handleSearch={handleSearch}
         user={userState.user}
         handleLogout={handleLogout}
         products={products}
