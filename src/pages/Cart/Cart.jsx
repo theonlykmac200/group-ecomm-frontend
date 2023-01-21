@@ -38,7 +38,7 @@ const Cart = ({ count, setCount }) => {
     cart = [];
     localStorage.setItem("cart", JSON.stringify(cart));
     setCart(cart);
-    navigate("/");
+    navigate("/checkout");
   };
 
   return !cart ? (

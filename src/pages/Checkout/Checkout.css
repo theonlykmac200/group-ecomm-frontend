@@ -1,0 +1,11 @@
+.checkout {
+  text-align: center;
+  margin-top: 4rem;
+}
+.checkout__title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.return {
+  color: rgb(57, 140, 168);
+}

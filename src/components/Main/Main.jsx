@@ -7,6 +7,7 @@ import SignupPage from "../../pages/Signup/SignupPage";
 import LoginPage from "../../pages/Login/LoginPage";
 import ProtectedRoute from "../Protected-Route";
 import { getToken } from "../../services/tokenService";
+import Checkout from "../../pages/Checkout/Checkout";
 
 const Main = (props) => {
   const [count, setCount] = useState(1);
@@ -46,6 +47,7 @@ const Main = (props) => {
             </ProtectedRoute>
           }
         />
+        <Route path="/checkout" element={<Checkout />} />
 
         <Route path="/signup" element={<SignupPage {...props} />} />
         <Route path="/login" element={<LoginPage {...props} />} />
