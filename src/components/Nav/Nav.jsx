@@ -94,7 +94,7 @@ const Nav = ({ handleSearch, products, setProducts, user, handleLogout }) => {
             <ShoppingCartIcon />
           </Link>
 
-          <div className="nav__cart-count">0</div>
+          <div className="nav__cart-count"></div>
         </div>
       </div>
       <div className="second-nav">
