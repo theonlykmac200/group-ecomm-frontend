@@ -1,8 +1,11 @@
 import "./Cart.css";
 import { useState, useEffect } from "react";
 import CartItem from "../../components/cartItem";
+import { useNavigate } from "react-router-dom";
 
 const Cart = ({ count, setCount }) => {
+  const navigate = useNavigate();
+
   const [cart, setCart] = useState(null);
 
   useEffect(() => {
@@ -28,6 +31,14 @@ const Cart = ({ count, setCount }) => {
   };
   const handleDecrement = () => {
     setCount((prevCount) => Math.max(1, prevCount - 1));
+  };
+
+  const handleCheckout = () => {
+    let cart = JSON.parse(localStorage.getItem("cart"));
+    cart = [];
+    localStorage.setItem("cart", JSON.stringify(cart));
+    setCart(cart);
+    navigate("/");
   };
 
   return !cart ? (
@@ -62,7 +73,7 @@ const Cart = ({ count, setCount }) => {
       <aside className="subtotal">
         <h1>Subtotal ({cart.length} items)</h1>
         <p>${parseFloat(getSubtotal(cart)).toFixed(2)}</p>
-        <button>Checkout</button>
+        <button onClick={handleCheckout}>Checkout</button>
       </aside>
     </div>
   );
