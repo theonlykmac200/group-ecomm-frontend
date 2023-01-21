@@ -6,7 +6,7 @@ import { useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 
-const Nav = ({ products, setProducts, user, handleLogout }) => {
+const Nav = ({ handleSearch, products, setProducts, user, handleLogout }) => {
   const [value, setValue] = useState("");
 
   const onChange = (e) => {
@@ -15,6 +15,7 @@ const Nav = ({ products, setProducts, user, handleLogout }) => {
 
   const onSearch = (searchTerm) => {
     setValue(searchTerm);
+    handleSearch(searchTerm);
   };
 
   return !user ? (
@@ -30,11 +31,13 @@ const Nav = ({ products, setProducts, user, handleLogout }) => {
           />
         </Link>
 
-
-
-
-
-
+        <div className="nav__address">
+          <div className="nav_address-icon">
+            <LocationOnOutlinedIcon id="location" />
+            <span className="address-one">Hello</span>
+          </div>
+          <span className="address-two">Select your address</span>
+        </div>
 
         <div className="search">
           <input
@@ -48,7 +51,7 @@ const Nav = ({ products, setProducts, user, handleLogout }) => {
             {products
               .filter((item) => {
                 const searchTerm = value.toLowerCase();
-                const fullName = item.Title.toLowerCase()
+                const fullName = item.Title.toLowerCase();
 
                 return (
                   searchTerm &&
@@ -91,7 +94,7 @@ const Nav = ({ products, setProducts, user, handleLogout }) => {
             <ShoppingCartIcon />
           </Link>
 
-          <div className="nav__cart-count">0</div>
+          <div className="nav__cart-count"></div>
         </div>
       </div>
       <div className="second-nav">
