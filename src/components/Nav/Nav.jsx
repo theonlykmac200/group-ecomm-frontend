@@ -30,13 +30,11 @@ const Nav = ({ products, setProducts, user, handleLogout }) => {
           />
         </Link>
 
-        <div className="nav__address">
-          <div className="nav_address-icon">
-            <LocationOnOutlinedIcon id="location" />
-            <span className="address-one">Hello</span>
-          </div>
-          <span className="address-two">Select your address</span>
-        </div>
+
+
+
+
+
 
         <div className="search">
           <input
@@ -50,7 +48,7 @@ const Nav = ({ products, setProducts, user, handleLogout }) => {
             {products
               .filter((item) => {
                 const searchTerm = value.toLowerCase();
-                const fullName = item.Title.toLowerCase();
+                const fullName = item.Title.toLowerCase()
 
                 return (
                   searchTerm &&
