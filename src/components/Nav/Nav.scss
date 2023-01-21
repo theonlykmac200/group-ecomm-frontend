@@ -113,6 +113,9 @@
   margin-left: 10px;
   margin-right: 10px;
   color: white;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .nav-auth {
@@ -163,6 +166,9 @@
   text-align: center;
   padding: 5px;
 }
+.all-text span:hover {
+  cursor: pointer;
+}
 @media screen and (max-width: 1362px) {
   .second-nav {
     height: 55px;
@@ -170,11 +176,17 @@
 }
 .menu-icon {
   vertical-align: middle;
+  &:hover {
+    cursor: pointer;
+  }
 }
 .nav__address {
   display: flex;
   flex-direction: column;
   color: white;
+  &:hover {
+    cursor: pointer;
+  }
 }
 .address-one {
   font-size: 12px;
