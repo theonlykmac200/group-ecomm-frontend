@@ -1,20 +1,14 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Product from "../../components/Product/Product";
 import "./Index.css";
-const Index = ({ products, cart, setCart }) => {
+const Index = ({ products }) => {
   const addToCart = (product) => {
-    // const existingProducts = JSON.parse(localStorage.getItem("product"));
-    const Product = localStorage.setItem("product", JSON.stringify(product));
-    const newProduct = JSON.parse();
-
-    if (!cart) {
-      const newCart = localStorage.setItem("cart", JSON.stringify(cart));
-      newCart.products.push(newProduct);
-      setCart(newCart);
-    } else {
-      cart.products.push(newProduct);
-      setCart(cart);
+    let cart = [];
+    if (localStorage.getItem("cart")) {
+      cart = JSON.parse(localStorage.getItem("cart"));
     }
+    cart.push(product);
+    localStorage.setItem("cart", JSON.stringify(cart));
   };
 
   function loaded() {

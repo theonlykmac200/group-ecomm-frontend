@@ -9,10 +9,6 @@ import ProtectedRoute from "../Protected-Route";
 import { getToken } from "../../services/tokenService";
 
 const Main = (props) => {
-  const [cart, setCart] = useState({
-    products: [],
-  });
-
   return (
     <main>
       <Routes>
@@ -20,7 +16,7 @@ const Main = (props) => {
           path="/"
           element={
             <ProtectedRoute user={props.user}>
-              <Index cart={cart} setCart={setCart} products={props.products} />
+              <Index products={props.products} />
             </ProtectedRoute>
           }
         />
@@ -36,7 +32,7 @@ const Main = (props) => {
           path="/cart"
           element={
             <ProtectedRoute user={props.user}>
-              <Cart cart={cart} setCart={setCart} />
+              <Cart />
             </ProtectedRoute>
           }
         />

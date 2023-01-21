@@ -1,13 +1,15 @@
 import "./Cart.css";
 import { useState, useEffect } from "react";
 
-const Cart = ({ cart, setCart }) => {
-  useEffect(() => {
-    const Cart = JSON.parse(localStorage.getItem("cart"));
-    if (Cart) {
-      setCart(Cart);
-    }
-  }, []);
+const Cart = () => {
+  const [cart, setCart] = useState({});
+
+  // useEffect(() => {
+  //   const Cart = JSON.parse(localStorage.getItem("cart"));
+  //   if (Cart) {
+  //     setCart(Cart);
+  //   }
+  // }, []);
 
   return (
     <div className="cart">
