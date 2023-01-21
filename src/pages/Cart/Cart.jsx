@@ -9,15 +9,16 @@ const Cart = () => {
     setCart(JSON.parse(localStorage.getItem("cart")));
   }, []);
 
-  // const handleIncrement = ()=> {}
   // const handleDelete = (e) => {
   //   console.log(e.target);
   // };
 
-  const getSubtotal = () => {
-    cart.reduce(function (prev, current) {
-      return prev + +current.Price;
-    }, 0);
+  const getSubtotal = (arr) => {
+    let subtotal = 0;
+    for (let i = 0; i < arr.length; i++) {
+      subtotal += arr[i].Price;
+    }
+    return subtotal;
   };
 
   return !cart ? (
@@ -56,7 +57,7 @@ const Cart = () => {
       </div>
       <aside className="subtotal">
         <h1>Subtotal ({cart.length} items)</h1>
-        <p>{getSubtotal}</p>
+        <p>${getSubtotal(cart)}</p>
         <button>Checkout</button>
       </aside>
     </div>
