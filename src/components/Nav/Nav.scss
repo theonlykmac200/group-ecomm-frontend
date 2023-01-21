@@ -49,7 +49,6 @@
   right: -80px;
   border-radius: 24px;
   position: relative;
-  
 }
 
 .searchInput {
@@ -164,9 +163,13 @@
   text-align: center;
   padding: 5px;
 }
+@media screen and (max-width: 1340px) {
+  .second-nav {
+    height: 55px;
+  }
+}
 .menu-icon {
   vertical-align: middle;
-
 }
 .nav__address {
   display: flex;
@@ -175,7 +178,7 @@
 }
 .address-one {
   font-size: 12px;
-  color:rgb(183, 184, 187);
+  color: rgb(183, 184, 187);
 }
 .address-two {
   font-size: 15px;
