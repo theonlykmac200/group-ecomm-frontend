@@ -1,5 +1,6 @@
 import "./Cart.css";
 import { useState, useEffect } from "react";
+import CartItem from "../../components/cartItem";
 
 const Cart = ({ count, setCount }) => {
   const [cart, setCart] = useState(null);
@@ -8,10 +9,6 @@ const Cart = ({ count, setCount }) => {
     setCart(JSON.parse(localStorage.getItem("cart")));
   }, []);
 
-  // const handleDelete = (e) => {
-  //   console.log(e.target);
-  // };
-
   const getSubtotal = (arr) => {
     let subtotal = 0;
     for (let i = 0; i < arr.length; i++) {
@@ -19,12 +16,18 @@ const Cart = ({ count, setCount }) => {
     }
     return subtotal;
   };
+  const handleDelete = (id) => {
+    let cart = JSON.parse(localStorage.getItem("cart"));
+    cart = cart.filter((product) => product._id !== id);
+    localStorage.setItem("cart", JSON.stringify(cart));
+    setCart(cart);
+  };
 
   const handleIncrement = () => {
-    setCount(count + 1);
+    setCount((prevCount) => prevCount + 1);
   };
   const handleDecrement = () => {
-    setCount(count - 1);
+    setCount((prevCount) => Math.max(1, prevCount - 1));
   };
 
   return !cart ? (
@@ -45,25 +48,20 @@ const Cart = ({ count, setCount }) => {
         <h1 className="cart__title">Shopping Cart</h1>
         {cart.map((product) => {
           return (
-            <div className="cart__item">
-              <img src={product.img} alt={product.Title} />
-              <p className="cart__item-title">
-                {product.Title.slice(0, 30) + "..."}
-              </p>
-              <div className="cart__item-qty">
-                <span onClick={handleDecrement}>-</span>
-                <p>{count}</p>
-                <span onClick>+</span>
-              </div>
-              <button id="delete">Delete</button>
-              <p>{product.Price}</p>
-            </div>
+            <CartItem
+              key={product._id}
+              product={product}
+              handleDecrement={handleDecrement}
+              handleIncrement={handleIncrement}
+              handleDelete={handleDelete}
+              count={count}
+            />
           );
         })}
       </div>
       <aside className="subtotal">
         <h1>Subtotal ({cart.length} items)</h1>
-        <p>${getSubtotal(cart)}</p>
+        <p>${parseFloat(getSubtotal(cart)).toFixed(2)}</p>
         <button>Checkout</button>
       </aside>
     </div>

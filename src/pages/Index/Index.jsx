@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Product from "../../components/Product/Product";
-import "./Index.css";
+import "./Index.scss";
 
 const Index = ({ products, count, setCount }) => {
   const addToCart = (product) => {
@@ -9,11 +9,11 @@ const Index = ({ products, count, setCount }) => {
       cart = JSON.parse(localStorage.getItem("cart"));
     }
 
-    if (cart.filter((p) => p._id === product._id).length > 0) {
-      // add 1 to item count
-    } else {
-      cart.push(product);
-    }
+    // if (cart.filter((p) => p._id === product._id).length > 0) {
+    //   setCount(count++);
+    // } else {
+    cart.push(product);
+    // }
 
     localStorage.setItem("cart", JSON.stringify(cart));
   };

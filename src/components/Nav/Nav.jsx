@@ -6,7 +6,7 @@ import { useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 
-const Nav = ({ products, setProducts, user, handleLogout }) => {
+const Nav = ({ handleSearch, products, setProducts, user, handleLogout }) => {
   const [value, setValue] = useState("");
 
   const onChange = (e) => {
@@ -15,6 +15,7 @@ const Nav = ({ products, setProducts, user, handleLogout }) => {
 
   const onSearch = (searchTerm) => {
     setValue(searchTerm);
+    handleSearch(searchTerm);
   };
 
   return !user ? (
