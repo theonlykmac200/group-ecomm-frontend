@@ -1,9 +1,8 @@
 import "./Cart.css";
 import { useState, useEffect } from "react";
 
-const Cart = () => {
+const Cart = ({ count, setCount }) => {
   const [cart, setCart] = useState(null);
-  const [count, setCount] = useState(1);
 
   useEffect(() => {
     setCart(JSON.parse(localStorage.getItem("cart")));
@@ -19,6 +18,13 @@ const Cart = () => {
       subtotal += arr[i].Price;
     }
     return subtotal;
+  };
+
+  const handleIncrement = () => {
+    setCount(count + 1);
+  };
+  const handleDecrement = () => {
+    setCount(count - 1);
   };
 
   return !cart ? (
@@ -45,9 +51,9 @@ const Cart = () => {
                 {product.Title.slice(0, 30) + "..."}
               </p>
               <div className="cart__item-qty">
-                <span>-</span>
+                <span onClick={handleDecrement}>-</span>
                 <p>{count}</p>
-                <span>+</span>
+                <span onClick>+</span>
               </div>
               <button id="delete">Delete</button>
               <p>{product.Price}</p>
