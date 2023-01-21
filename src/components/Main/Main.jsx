@@ -9,6 +9,8 @@ import ProtectedRoute from "../Protected-Route";
 import { getToken } from "../../services/tokenService";
 
 const Main = (props) => {
+  const [count, setCount] = useState(1);
+
   return (
     <main>
       <Routes>
@@ -16,7 +18,11 @@ const Main = (props) => {
           path="/"
           element={
             <ProtectedRoute user={props.user}>
-              <Index products={props.products} />
+              <Index
+                count={count}
+                setCount={setCount}
+                products={props.products}
+              />
             </ProtectedRoute>
           }
         />
@@ -24,7 +30,11 @@ const Main = (props) => {
           path="/product/:id"
           element={
             <ProtectedRoute user={props.user}>
-              <Show products={props.products} />
+              <Show
+                count={count}
+                setCount={setCount}
+                products={props.products}
+              />
             </ProtectedRoute>
           }
         />
@@ -32,7 +42,7 @@ const Main = (props) => {
           path="/cart"
           element={
             <ProtectedRoute user={props.user}>
-              <Cart />
+              <Cart count={count} setCount={setCount} />
             </ProtectedRoute>
           }
         />
