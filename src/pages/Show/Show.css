@@ -7,26 +7,23 @@
     display: flex;
     width: 100%;
     height: 100%;
-    /* background-color: white; */
     background-color: white;
 }
 
 .container {
     width: 400%;
-    /* z-index: 1; */
     background-color: white;
 }
 
 .right {
     float: left;
     width: 20%;
-    height: 250px;
+    height: 200px;
     text-align: center;
     border: 1px solid rgba(0, 0, 0, 0.236);
     border-radius: 9px;
     padding: 1rem;
-    margin: 6em auto;
-    display: flex;
+    margin: 7em auto;
 }
 
 .add-cart {
@@ -36,20 +33,8 @@
     margin-top: 10px;
     border-radius: 5px;
     font-size: 14px;
-    background-color: rgb(250, 215, 73);
-     
-}
-
-.buy-button {
-    border: none;
-    color: black;
-    padding: 5px 15px;
-    width: 40%;
-    margin-top: 10px;
-    border-radius: 5px;
-    font-size: 14px;
     background-color: rgb(254, 189, 105);
-    
+     
 }
 
 .free-returns {
@@ -67,24 +52,20 @@
     font-size: 14px;
 }
 
-
-/* z-index: 1;
-border: 1px solid rgba(0, 0, 0, 0.198);
-padding: 1rem;
-background-color: rgb(255, 255, 255);
-margin: 2rem auto;
-width: 30%;
-height: 7rem; */
-
 .center {
     float: left;
     width: 35%;
-    /* margin: 20px; */
-    /* padding: 10px; */
     height: 500px;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 60px;
+    margin: 50px;
 }
+.product-title {
+    color: rgb(4, 2, 2);
+    font-size: 20px;
+    font-weight: 100;
+}
+
 
 .left {
     float: left;
@@ -95,44 +76,17 @@ height: 7rem; */
     display: flex;
     justify-content: center;
 }
-
-.section {
-    border: 1px solid rgba(0, 0, 0, 0.236);
-    border-radius: 25px;
-    margin-top: 70px;
-    height: 400px;
+.product-img{
+    height: 300px;
+    width: 300px;
+    margin-top: 100px;
 }
 
-/* .product-img {
-    width: 350px;
-    height: 350px;
-    margin: 60px;
+.product-price{
+    line-height: 80px;
 }
-.product-title {
-    color: rgb(4, 2, 2);
-    font-size: 20px;
-    font-weight: 100;
-    margin: 25px;
-    padding: 10px;
+.product-desc{
+    line-height: 25px;
 }
-.star-rating {
-    color: orange;
-}
-.product-price {
-    color: rgb(188, 9, 9);
-}
-.paragraph-two {
-    line-height: 20px;
-    width: 85%;
-    margin: 35px;
-}
-/* .about-item{
-    color: red;
-    font-weight: bolder;
-    
-} */
-/* .product-desc{
-    font-size: 15px;
 
-    
-} */
+
