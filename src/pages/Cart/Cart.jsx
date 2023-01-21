@@ -1,23 +1,30 @@
 import "./Cart.css";
 import { useState, useEffect } from "react";
 
-const Cart = () => {
+const Cart = ({ count, setCount }) => {
   const [cart, setCart] = useState(null);
-  const [count, setCount] = useState(1);
 
   useEffect(() => {
     setCart(JSON.parse(localStorage.getItem("cart")));
   }, []);
 
-  // const handleIncrement = ()=> {}
   // const handleDelete = (e) => {
   //   console.log(e.target);
   // };
 
-  const getSubtotal = () => {
-    cart.reduce(function (prev, current) {
-      return prev + +current.Price;
-    }, 0);
+  const getSubtotal = (arr) => {
+    let subtotal = 0;
+    for (let i = 0; i < arr.length; i++) {
+      subtotal += arr[i].Price;
+    }
+    return subtotal;
+  };
+
+  const handleIncrement = () => {
+    setCount(count + 1);
+  };
+  const handleDecrement = () => {
+    setCount(count - 1);
   };
 
   return !cart ? (
@@ -44,9 +51,9 @@ const Cart = () => {
                 {product.Title.slice(0, 30) + "..."}
               </p>
               <div className="cart__item-qty">
-                <span>-</span>
+                <span onClick={handleDecrement}>-</span>
                 <p>{count}</p>
-                <span>+</span>
+                <span onClick>+</span>
               </div>
               <button id="delete">Delete</button>
               <p>{product.Price}</p>
@@ -56,7 +63,7 @@ const Cart = () => {
       </div>
       <aside className="subtotal">
         <h1>Subtotal ({cart.length} items)</h1>
-        <p>{getSubtotal}</p>
+        <p>${getSubtotal(cart)}</p>
         <button>Checkout</button>
       </aside>
     </div>
