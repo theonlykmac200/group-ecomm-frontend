@@ -31,14 +31,6 @@ const Nav = ({ handleSearch, products, setProducts, user, handleLogout }) => {
           />
         </Link>
 
-        <div className="nav__address">
-          <div className="nav_address-icon">
-            <LocationOnOutlinedIcon id="location" />
-            <span className="address-one">Hello</span>
-          </div>
-          <span className="address-two">Select your address</span>
-        </div>
-
         <div className="search">
           <input
             className="searchInput"
