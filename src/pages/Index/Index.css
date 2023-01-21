@@ -11,16 +11,6 @@
   position: absolute;
   background: linear-gradient(to bottom, transparent, #cfe1ea, #9fcbe8);
 }
-@media screen and (min-width: 600px) {
-  .products {
-    margin-top: 3rem;
-  }
-}
-@media screen and (min-width: 800px) {
-  .products {
-    margin-top: 1rem;
-  }
-}
 @media screen and (min-width: 1300px) {
   .products {
     margin-top: -5rem;
