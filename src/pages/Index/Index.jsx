@@ -1,13 +1,20 @@
 import { useEffect, useState } from "react";
 import Product from "../../components/Product/Product";
-import "./Index.css";
-const Index = ({ products }) => {
+import "./Index.scss";
+
+const Index = ({ products, count, setCount }) => {
   const addToCart = (product) => {
     let cart = [];
     if (localStorage.getItem("cart")) {
       cart = JSON.parse(localStorage.getItem("cart"));
     }
+
+    // if (cart.filter((p) => p._id === product._id).length > 0) {
+    //   setCount(count++);
+    // } else {
     cart.push(product);
+    // }
+
     localStorage.setItem("cart", JSON.stringify(cart));
   };
 

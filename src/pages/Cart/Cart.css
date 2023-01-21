@@ -4,6 +4,7 @@
   margin: auto;
   gap: 1rem;
 }
+
 .cart__container {
   border: 1px solid rgba(0, 0, 0, 0.236);
   padding: 1rem;
@@ -12,6 +13,7 @@
   z-index: 1;
   background-color: white;
 }
+
 .cart__title {
   font-size: 2rem;
 }
@@ -48,7 +50,7 @@
   padding: none;
   margin: none;
   position: absolute;
-  left: 15rem;
+  left: 7rem;
   bottom: -0.4rem;
 }
 #delete:hover {
