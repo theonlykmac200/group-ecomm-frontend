@@ -6,7 +6,7 @@ Kevin Tran
 Colin Stoutt
 
 ### Introduction
-As a group we decided to really go for it in the group project and tackle an amazon ecommerce clone.  We wanted to challenge ourselves in design, functionality and hoped to tackle a few bonus items beyond the MVP reqs.  
+As a group, we decided to really go for it in the group project and tackle an amazon ecommerce clone.  We wanted to challenge ourselves in design, functionality and hoped to tackle a few bonus items beyond the MVP requirements.  
 
 ### User Stories
 
@@ -26,7 +26,9 @@ As a group we decided to really go for it in the group project and tackle an ama
 ![Alt text](Screen%20Shot%202023-01-20%20at%2011.43.37%20AM.png)
 
 ### Screenshots
-After you have a fully styled project go back and add screen shots of some completed pages.
+![Alt text](Screen%20Shot%202023-01-21%20at%201.34.21%20AM.png)
+![Alt text](Screen%20Shot%202023-01-21%20at%201.34.43%20AM.png)
+![Alt text](Screen%20Shot%202023-01-21%20at%201.35.22%20AM.png)
 
 ### Technologies Used: 
 
@@ -45,8 +47,11 @@ After you have a fully styled project go back and add screen shots of some compl
 
 
 ### Future Enhancements:
-- a cart the functions from the backend
-- Addition of checkout feature and Stripe implementation
-- Admin dashboard for creating, updating, editing and deleting products and managing users
-- Adding Checkout Pages and components like User Detail card and a Buy Button
+- A cart that functions from the backend.
+- Addition of checkout features with the implementation of Stripe API.
+- Admin dashboard for creating, updating, editing and deleting products and managing users.
+- Adding Checkout Pages and components like User Detail card and a Buy Button.
+- Add software engineer related advertisements as customization. 
+- Implement a wider selection of products.
+- Improve the functionality of the navigation bar and provide more links for the user. 
   
