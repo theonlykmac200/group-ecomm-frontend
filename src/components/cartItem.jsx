@@ -10,7 +10,7 @@ const CartItem = ({
   return (
     <div className="cart__item" key={product._id}>
       <img src={product.img} alt={product.Title} />
-      <p className="cart__item-title">{product.Title.slice(0, 30) + "..."}</p>
+      <p className="cart__item-title">{product.Title.slice(0, 55) + "..."}</p>
       {/* <div className="cart__item-qty">
         <span onClick={handleDecrement}>-</span>
         <p>{count}</p>
@@ -19,7 +19,7 @@ const CartItem = ({
       <button id="delete" onClick={() => handleDelete(product._id)}>
         Delete
       </button>
-      <p>{product.Price}</p>
+      <p>${product.Price}</p>
     </div>
   );
 };
