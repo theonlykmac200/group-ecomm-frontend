@@ -9,10 +9,13 @@ const Cart = () => {
     setCart(JSON.parse(localStorage.getItem("cart")));
   }, []);
 
-  // const handleIncrement = ()=> {}
-  // const handleDelete = (e) => {
-  //   console.log(e.target);
-  // };
+  const handleIncrement = () => {
+    setCount(count + 1);
+  };
+  
+  const handleDecrement = () => {
+    setCount(count - 1);
+  };
 
   const getSubtotal = () => {
     cart.reduce(function (prev, current) {
@@ -44,9 +47,9 @@ const Cart = () => {
                 {product.Title.slice(0, 30) + "..."}
               </p>
               <div className="cart__item-qty">
-                <span>-</span>
-                <p>{count}</p>
-                <span>+</span>
+              <span onClick={handleDecrement}>-</span>
+              <p>{count}</p>
+              <span onClick={handleIncrement}>+</span>
               </div>
               <button id="delete">Delete</button>
               <p>{product.Price}</p>

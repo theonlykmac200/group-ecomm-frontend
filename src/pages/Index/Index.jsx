@@ -7,7 +7,15 @@ const Index = ({ products }) => {
     if (localStorage.getItem("cart")) {
       cart = JSON.parse(localStorage.getItem("cart"));
     }
-    cart.push(product);
+    if (cart.filter((p) => p._id === product._id).length > 0) {
+    } else {
+      cart.push(product);
+    }
+if (cart.filter((p) => p._id === product._id).length > 0) {
+      // add 1 to count
+    } else {
+      cart.push(product);
+    }
     localStorage.setItem("cart", JSON.stringify(cart));
   };
 
